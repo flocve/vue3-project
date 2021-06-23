@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType } from "vue";
 import { UserType } from "../api/data";
 export default defineComponent({
   name: "Users",
   props: {
     users: {
-      type: Object as UserType[],
+      type: Object as PropType<UserType[]>,
       required: true,
     },
   },

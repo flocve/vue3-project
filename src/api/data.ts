@@ -81,12 +81,12 @@ export const data: DataType = {
   ],
 };
 
-export type DataType = {
+export interface DataType {
   actif: BuildingType;
   users: UserType[];
-};
+}
 
-export type UserType = {
+export interface UserType {
   gender: string;
   name: {
     title: string;
@@ -108,9 +108,9 @@ export type UserType = {
     };
   };
   email: string;
-};
+}
 
-export type BuildingType = {
+export interface BuildingType {
   name: string;
   Address: {
     street: string;
@@ -118,4 +118,4 @@ export type BuildingType = {
     city: string;
     country: string;
   };
-};
+}
