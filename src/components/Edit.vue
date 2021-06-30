@@ -34,19 +34,18 @@ export default defineComponent({
   },
     methods: {
       ajouter: function(){
-        console.log(this.prenom);
-        if (!this.prenom || !this.nom)
-    console.log("error, no addition done");
-  else {
-    userNames.push(`${inputValueFirstName} ${inputValuelastName}`);
-    console.log("user added");
-  }
+        console.log("hi");
+  //       console.log(this.prenom);
+  //       if (!this.prenom || !this.nom)
+  //   console.log("error, no addition done");
+  // else {
+  //   console.log("user added");
+  // }
       },
       supprimer: function(){
         // console.log("hello");
         let users = data.users;
         console.log("hello");
-        users.pop();
       }
     },
   setup: () => {},
