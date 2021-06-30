@@ -1,6 +1,11 @@
 <template>
   <div class="building-component">
-    <h1>{{ building }}</h1>
+    <img
+      class="actifImage"
+      src="../assets/actifImage.jpg"
+      alt="image de l'actif"
+    />
+    <h1 class="actifName">{{ building.name }}</h1>
   </div>
 </template>
 
@@ -21,7 +26,20 @@ export default defineComponent({
 
 <style scoped>
 .building-component {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.actifImage {
+  width: 200px;
+}
+
+.actifName {
+  font-family: Helvetica;
+  color: rgb(52, 156, 143);
 }
 </style>

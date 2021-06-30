@@ -27,6 +27,6 @@ export default defineComponent({
 
 <style scoped>
 .gestion-component {
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
 }
 </style>
